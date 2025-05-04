@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+  <link rel="stylesheet" href="./page1/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <title>Netflix</title>
+ 
+
+  <link rel="stylesheet" href="styles/genres.css">
+  <link rel="stylesheet" href="styles/signup.css">
+  <link rel="stylesheet" href="styles/main.css">
+ 
+</head>
+<body>
+
+
+
+
+
+  <div id="signup-popup" class="popup-overlay">
+    <div class="popup-content">
+      <a href="#" class="close-btn">&times;</a>
+      <h2>Create Account</h2>
+      <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Create Password" required>
+        <button type="submit" class="signup-main">Sign Up</button>
+        <div class="or">OR</div>
+        <button class="google-signup">Sign Up with Google</button>
+        <p class="login-option">Already have an account? <a href="#">Login</a></p>
+      </form>
+    </div>
+  </div>
+
+  
+
+    <div id="main">
+    
+      <div class="banner">
+             
+        <header class="banner-header">
+          
+           <div class="logo">Netflix</div>
+            
+            <button class="btn-signup">
+              Sign Up
+              
+          </button>
+        </header>
+   
+        <div class="content the-little-mermaid active">
+            <img src="./page1/movie name/the-little-mermaid-title.png" alt="" class="movie-title">
+            <h4>
+                <span>2023</span><span><i>12+</i></span><span>2h 14min</span><span>romance</span>
+            </h4>
+          <p>The Little Mermaid (2023) is a romantic fantasy musical about Ariel, a mermaid who dreams of living on land and falls in love with a human prince. She makes a deal with a sea witch to become human.
+
+          </p>    
+    
+            <div class="button">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i>watch</a>
+                 <a href="#"><i class="fa fa-pause" aria-hidden="true"></i>my list</a>   
+                
+            </div>
+         </div>
+        
+         
+        <div class="content bg-65">
+            <img src="./page1/movie name/the-65-title.png" alt="" class="movie-title">
+            <h4>
+                <span>2023</span><span><i>60+</i></span><span>1h 33min</span><span>Adventure</span>
+            </h4>
+<p>65 (2023) is a sci-fi action thriller starring Adam Driver as Mills, a pilot who crash-lands on Earth 65 million years ago. Stranded with a young girl named Koa, they must navigate a dangerous prehistoric landscape filled with dinosaurs to find a way home.
+
+</p>    
+    
+            <div class="button">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i>watch</a>
+                 <a href="#"><i class="fa fa-pause" aria-hidden="true"></i>my list</a>   
+                
+            </div>
+         </div>
+    
+         
+        <div class="content the-covenant">
+            <img src="./page1/movie name/the-covenant-title.png" alt="" class="movie-title">
+            <h4>
+                <span>2023</span><span><i>20+</i></span><span>2h 3min</span><span>Action</span>
+            </h4>
+<p>Guy Ritchie's The Covenant (2023) is a war action-drama film directed by Guy Ritchie. It stars Jake Gyllenhaal as U.S. Army Sergeant John Kinley and Dar Salim as Ahmed, an Afghan interpreter. The story follows Kinley and Ahmed as they navigate the challenges of the War in Afghanistan, with themes of loyalty and sacrifice.​
+</p>    
+    
+            <div class="button">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i>watch</a>
+                 <a href="#"><i class="fa fa-pause" aria-hidden="true"></i>my list</a>   
+                
+            </div>
+         </div>
+    
+         
+        <div class="content the-black-demon">
+            <img src="./page1/movie name/the-black-demon-title.png" alt="" class="movie-title">
+            <h4>
+                <span>2023</span><span><i>25+</i></span><span>1h 40min</span><span>Sci-Fi</span>
+            </h4>
+<p>​The Black Demon (2023) is a sci-fi thriller about a family stranded on a deteriorating oil rig in Baja California, facing off against a massive megalodon shark. Directed by Adrian Grunberg, the film stars Josh Lucas and Fernanda Urrejola. ​</p>    
+    
+            <div class="button">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i>watch</a>
+                 <a href="#"><i class="fa fa-pause" aria-hidden="true"></i>my list</a>   
+                
+            </div>
+         </div>
+    
+         
+        <div class="content the-tank">
+            <img src="./page1/movie name/the-tank-title.png" alt="" class="movie-title">
+            <h4>
+                <span>2023</span><span><i>11+</i></span><span>1h 14min</span><span>Horror</span>
+            </h4>
+<p> In The Tank (2023), Ben and his family inherit an abandoned coastal property, only to accidentally release an ancient, long-dormant creature that has terrorized the region—including Ben's own ancestors—for generations.</p>    
+    
+            <div class="button">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i>watch</a>
+                 <a href="#"><i class="fa fa-pause" aria-hidden="true"></i>my list</a>   
+                
+            </div>
+         </div>
+    
+    
+    
+         <div class="carousel-box">
+           <div class="carousel">
+            <div class="carousel-item"
+            
+            onclick="changeBg('bg-little-mermaid.jpg', 'the-little-mermaid');"
+            >
+                <img src="./page1/movie image/the-little-mermaid.jpeg" alt="" srcset="">
+            </div>
+            
+            
+            <div class="carousel-item"
+            onclick="changeBg('bg-65.jpeg', 'bg-65');"
+            >
+                <img src="./page1/movie image/65.jpg" alt="" srcset="">
+            </div>
+    
+           
+           
+            <div class="carousel-item"
+            onclick="changeBg('bg-the-covenant.jpeg', 'the-covenant');"
+            >
+                <img src="./page1/movie image/the-covenant.jpg" alt="" srcset="">
+            </div>
+    
+            
+            
+            <div class="carousel-item"
+            onclick="changeBg('bg-the-black-demon.jpeg', 'the-black-demon');"
+            >
+                <img src="./page1/movie image/the-black-demon.jpg" alt="" srcset="">
+            </div>
+    
+            
+            
+            <div class="carousel-item"
+            onclick="changeBg('bg-the-tank.jpeg', 'the-tank');"
+            >
+                <img src="./page1/movie image/the-tank.jpeg" alt="" srcset="">
+            </div>
+            
+           </div> 
+        
+        </div>
+         <a href="#" class="play" 
+         ><i class="fa fa-play" aria-hidden="true"> watch trailer</i>
+    
+         </a>
+     </div>
+</div>
+
+</div>     
+</div> 
+
+
+
+
+
+
+   
+    <!-- Genres Section -->
+     <div id="genres"> 
+    
+       <div id="scroller">
+        <div id="scroller-in">
+          <h2>SELECT</h2>
+          <h2>GENRES</h2>
+          <h2>THAT MATCH</h2>
+          <h2>YOUR</h2>
+          <h2>MOOD</h2>
+          <h2>&</h2>
+          <h2>FEEL</h2>
+          <h2>SELECT</h2>
+          <h2>GENRES</h2>
+          <h2>THAT MATCH</h2>
+          <h2>YOUR</h2>
+          <h2>MOOD</h2>
+          <h2>&</h2>
+          <h2>FEEL</h2>
+          <h2>SELECT</h2>
+          <h2>GENRES</h2>
+          <h2>THAT MATCH</h2>
+          <h2>YOUR</h2>
+          <h2>MOOD</h2>
+          <h2>&</h2>
+          <h2>FEEL</h2>
+        </div>
+        <div id="scroller-in">
+          <h2>SELECT</h2>
+          <h2>GENRES</h2>
+          <h2>THAT MATCH</h2>
+          <h2>YOUR</h2>
+          <h2>MOOD </h2>
+          <h2>&</h2>
+          <h2>FEEL</h2>
+          <h2>SELECT</h2>
+          <h2>GENRES</h2>
+          <h2>THAT MATCH</h2>
+          <h2>YOUR</h2>
+          <h2>MOOD</h2>
+          <h2>&</h2>
+          <h2>FEEL</h2>
+          <h2>SELECT</h2>
+          <h2>GENRES</h2>
+          <h2>THAT MATCH</h2>
+          <h2>YOUR</h2>
+          <h2>MOOD</h2>
+          <h2>&</h2>
+          <h2>FEEL</h2>
+        </div>
+      </div>
+
+      <div class="genre-bar" id="genreBar">
+      
+         
+        <button id="dropdownBtn" class="dropdown-button">+</button>
+      </div>
+      <div class="extra-genres" id="extraGenres" style="display: none;"></div>
+    
+      <div class="movie-carousel">
+        <div class="movie-list-wrapper">
+          <div class="movie-list" id="movieList">
+         
+          </div>
+        </div>
+      </div>
+    
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    </div>
+
+
+ 
+
+
+    <section class="reasons">
+        <h2>More reasons to join</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Enjoy on your TV</h3>
+            <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+          </div>
+          <div class="card">
+            <h3>Download your shows to watch offline</h3>
+            <p>Save your favourites easily and always have something to watch.</p>
+          </div>
+          <div class="card">
+            <h3>Watch everywhere</h3>
+            <p>Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p>
+          </div>
+          <div class="card">
+            <h3>Create profiles for kids</h3>
+            <p>Send kids on adventures with their favourite characters in a space made just for them — free with your membership.</p>
+          </div>
+        </div>
+      </section>
+    
+
+
+
+      <section class="faq-section">
+        <h3>Frequently Asked Questions</h3>
+    
+        <div class="faq">
+          <div class="question">What is Netflix?<span class="toggle">+</span></div>
+          <div class="answer">Netflix is a streaming service that offers a wide variety of TV shows, movies, and more.</div>
+        </div>
+    
+        <div class="faq">
+          <div class="question">How much does Netflix cost?<span class="toggle">+</span></div>
+          <div class="answer">Plans start at ₹149. No extra costs or contracts.</div>
+        </div>
+    
+        <div class="faq">
+          <div class="question">Where can I watch?<span class="toggle">+</span></div>
+          <div class="answer">Watch anywhere, anytime on your devices.</div>
+        </div>
+    
+        <div class="faq">
+          <div class="question">How do I cancel?<span class="toggle">+</span></div>
+          <div class="answer">Cancel online anytime with no fees.</div>
+        </div>
+    
+        <div class="faq">
+          <div class="question">What can I watch on Netflix?<span class="toggle">+</span></div>
+          <div class="answer">TV shows, movies, documentaries, and more.</div>
+        </div>
+    
+        <div class="faq">
+          <div class="question">Is Netflix good for kids?<span class="toggle">+</span></div>
+          <div class="answer">Yes, with kids profiles and parental controls.</div>
+        </div>
+      </section>
+
+   
+      <footer class="footer">
+        <p>Questions? Call <a href="tel:0008009191743">000-800-919-1743</a></p>
+        <div class="footer-links">
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Speed Test</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Help Centre</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Cookie Preferences</a></li>
+            <li><a href="#">Legal Notices</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Ways to Watch</a></li>
+            <li><a href="#">Corporate Information</a></li>
+            <li><a href="#">Only on Netflix</a></li>
+          </ul>
+        </div>
+      
+        <div class="language-select">
+          <select>
+            <option>English</option>
+            <option>हिन्दी</option>
+          </select>
+        </div>
+      
+        <p>Netflix India</p>
+      </footer>
+
+
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+    integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js"
+    integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+
+
+
+
+
+
+    
+    
+    
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <script>
+    $(document).ready(function(){
+      $('.carousel').carousel();
+    });
+
+    </script>
+  
+    <script src="scripts/main.js"></script>
+    <script src="scripts/geners.js"></script>
+    <script src="scripts/golf.js"></script>
+    <script src="scripts/script.js" defer></script>
+  </div>
+</content>
+
+  <!-- Link JavaScript files -->
+
+  <!-- Signup Modal -->
+  <!-- Sign Up Button in Nav -->
+  <script>
+    const signupBtn = document.querySelector('.btn-signup');
+    const popup = document.getElementById('signup-popup');
+    const closeBtn = document.querySelector('.close-btn');
+  
+    signupBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      popup.style.display = 'flex';
+    });
+  
+    closeBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      popup.style.display = 'none';
+    });
+  </script>
+  
+
+
+ 
+  
+  
+
+
+
+  
+
+  
+
+
+</body>
+</html>

@@ -1,0 +1,737 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+
+:root {
+    --primary: #ff3700;
+}
+
+body {
+  
+    font-family: 'Poppins',sans-serif;
+}
+
+
+
+.banner-header {
+
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  background: transparent;
+  }
+   
+   .banner-header .logo {
+    font-weight: bold;
+    color: #db1313;
+    font-size: 50px;
+    font-family: sans-serif;
+    white-space: nowrap;
+   
+    
+  }
+   
+  
+  .btn-signup{
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(to bottom, #db1313, #7c0303);
+  
+    color: white;
+   
+    font-family: "Segoe UI", sans-serif;
+   
+    font-weight: bold;
+    font-size: 18px;
+   
+    border: none;
+   
+    border-radius: 30px;
+  
+    padding: 14px 28px;
+   
+    cursor: pointer;
+  
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  
+    animation: button-shimmer 2s infinite;
+    transition: all 0.3s ease-in-out;
+  
+  }
+  
+  
+  .btn-signup{
+    background: linear-gradient(to bottom, #db1313, #7c0303);
+    animation: button-particles 1s ease-in-out infinite;
+    transform: translateY(-2px);
+  }
+  
+  
+  .btn-signup {
+    transform: scale(0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+ 
+  @keyframes button-shimmer {
+    0% {
+      background-position: left top;
+    }
+  
+    100% {
+      background-position: right bottom;
+    }
+  }
+  
+  @keyframes button-particles {
+    0% {
+      background-position: left top;
+    }
+  
+    100% {
+      background-position: right bottom;
+    }
+  }
+
+
+  .btn-signup {
+    font-size: 18px;
+    padding: 12px 24px;
+    white-space: nowrap;
+  }
+  
+  @media (max-width: 768px) {
+    .banner-header {
+      padding: 10px 20px;
+    }
+  
+    .banner-header .logo {
+      font-size: 32px;
+    }
+  
+    .btn-signup {
+      font-size: 14px;
+      padding: 10px 18px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .banner-header {
+      padding: 8px 12px;
+    }
+  
+    .banner-header .logo {
+      font-size: 24px;
+    }
+  
+    .btn-signup {
+      font-size: 12px;
+      padding: 8px 16px;
+    }
+  }
+  @media (max-width: 600px) {
+    .banner-header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0;
+    }
+  }
+  
+  
+
+.banner{
+    position: relative;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    top: 0%;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url("../page1/movie image/bg-little-mermaid.jpg") no-repeat center center/cover;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .banner {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner .content {
+        max-width: 100%;
+    }
+
+    .banner .carousel-box {
+        flex-direction: column;
+        width: 100%;
+        min-width: unset;
+        overflow-x: auto;
+        padding: 10px;
+    }
+
+    .carousel {
+        flex-direction: row;
+        overflow-x: auto;
+        display: flex;
+        gap: 10px;
+        height: auto;
+        width: 100%;
+    }
+
+    .carousel-item img {
+        width: 100px;
+        height: auto;
+    }
+
+    .carousel {
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+        scrollbar-width: none; /* Hides scrollbar on Firefox */
+    }
+    .carousel::-webkit-scrollbar {
+        display: none; /* Hides scrollbar on Chrome, Safari */
+    }
+    
+}
+
+
+
+
+
+.banner::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0,0.5);
+}
+
+
+
+
+/* Popup Overlay */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  /* Popup Content */
+  .popup-content {
+    background: transparent;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .popup-content input,
+  .popup-content button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .popup-content .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #e00f0f;
+    size: 3px;
+  }
+  
+  .popup-content .or {
+    margin: 15px 0;
+    font-weight: bold;
+  }
+  
+  .popup-content .login-option {
+    margin-top: 10px;
+  }
+
+
+
+
+
+.content{
+    position: relative;
+    max-width: 550px;
+    display: none;
+    visibility: hidden;
+    transform: scale(0);
+    transition: 0.5s;
+}
+
+.content.active{
+   display: block;
+   visibility: visible;
+   transform: scale(1);
+   transition: 0.5s;
+}  
+
+
+
+
+.movie-title{
+    max-width: 250px;
+}
+
+.banner .content h4{
+    color: rgba(255, 255,255,0.5);
+    font-weight: 400;
+    /* font-size: 30px; */
+    font-size: clamp(18px, 2.5vw, 30px);
+}
+.banner .content h4 span{
+    padding: 0 10px;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+.banner .content h4 span:first-child{
+    padding-left: 0;
+}
+
+.banner .content h4 span:last-child{
+    border-right: none;
+}
+
+.banner .content h4 span i {
+    background: var(--primary);
+    color: white;
+    padding: 0 8px;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+.banner .content p{
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.5em;
+    color: #ffff;
+    margin: 10px 0px 20px;
+}
+
+.banner .content .button{
+    position: relative;
+}
+
+.banner .content .button a {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    background: var(--primary);
+    color: #ffffff;
+    padding: 6px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 768px) {
+    .banner .content .button a {
+        padding: 10px 15px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .banner .content .button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+.banner .content .button a:nth-child(2){
+    background: rgba(0, 0, 0,0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.banner .content .button a:hover:nth-child(2){
+    background: var(--primary);
+}
+
+
+.banner .carousel-box{
+    /* margin-left: 250px;
+    margin-top: 90px; */
+    position: relative;
+    min-width: 950px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+}
+
+.carousel{
+    position: relative;
+    height: 550px;
+    perspective: 1500;
+}
+.carousel .carousel-item{
+    width: 250px;
+    cursor: pointer;
+}
+
+.carousel .carousel-item img {
+    max-width: 235px;
+    border-radius: 10px;
+    transform: translatex(8px) translateY(-100px);
+    object-fit: cover;
+    object-position: center;
+}
+
+.play{
+    position:absolute ;
+    bottom: 50px;
+    left: 100px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    cursor: pointer !important;
+    transition: 0.3s;
+}
+
+.play i {
+    margin-right: 10px;
+    font-size: 15px;
+    cursor: pointer !important;
+}
+
+.play:hover{
+    color: var(--primary);
+}
+
+/* .social{
+   position: relative;
+   bottom: 50px;
+   right: 30px;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   gap: 25px;
+} */
+
+/* .social a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 25px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.socialmedia:hover{
+    color: var(--primary);
+}
+ */
+
+
+/* .trailer{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.trailer.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.trailer video{
+    max-width: 900px;
+    outline: none;
+}
+
+.close{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    filter: invert(1);
+    max-width: 30px;
+}
+
+  */
+
+  
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .nav {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav li {
+        margin: 8px 0;
+    }
+
+    .search {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+
+  @media (max-width: 480px) {
+    body {
+        padding: 0 10px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .play {
+        font-size: 1em;
+        left: 10px;
+        bottom: 20px;
+    }
+
+    .banner .content p {
+        font-size: 0.9em;
+    }
+}
+
+
+/* more reason */
+
+.reasons {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.reasons h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+
+
+
+
+/* frequently asked */
+.faq-section {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+.faq {
+  background: #333;
+  margin: 10px 0;
+  padding: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.answer {
+  display: none;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.faq.open .answer {
+  display: block;
+}
+
+.toggle {
+  font-weight: bold;
+}
+
+
+/* footer */
+
+.footer {
+  background-color: #000;
+  color: #999;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer a {
+  color: #999;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer p {
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 150px;
+}
+
+.footer-links li {
+  margin: 10px 0;
+}
+
+.language-select {
+  margin-bottom: 20px;
+}
+
+.language-select select {
+  background: transparent;
+  border: 1px solid #999;
+  color: #999;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column;
+  }
+
+  .footer-links ul {
+    min-width: 100%;
+  }
+
+  .language-select {
+    width: 100%;
+  }
+
+  .language-select select {
+    width: 100%;
+  }
+}
